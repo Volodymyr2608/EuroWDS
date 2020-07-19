@@ -24,7 +24,8 @@ body {
     font-family: 'Open Sans-Regular', sans-serif;
 }
 
-.page-section {
+
+section:nth-child(2n) {
     background-color: #ebebeb;
 }
 
