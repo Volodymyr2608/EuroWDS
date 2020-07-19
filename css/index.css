@@ -1,0 +1,35 @@
+@import "fonts.css";
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans-Regular', sans-serif;
+}
+
+.page-section {
+    background-color: #ebebeb;
+}
+
+.title {
+    color: #4c7a34;
+    font-size: 26px;
+    text-align: center;
+}
