@@ -28,8 +28,19 @@ body {
     background-color: #ebebeb;
 }
 
+.content-wrapper {
+    max-width: 992px;
+    margin: 0 auto;
+}
+
 .title {
     color: #4c7a34;
     font-size: 26px;
+    text-align: center;
+}
+
+
+/*Footer*/
+.footer-text {
     text-align: center;
 }
