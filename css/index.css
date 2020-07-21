@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import 'fonts.css';
+
 
 :root {
     box-sizing: border-box;
@@ -73,6 +75,10 @@ section:nth-child(2n) {
     justify-content: space-between;
     align-items: center;
     padding: 1.25em 0;
+}
+
+.header__btn-menu {
+    display: none;
 }
 
 .header__logo-img {
