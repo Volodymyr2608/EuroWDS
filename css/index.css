@@ -138,7 +138,7 @@ section:nth-child(2n) {
 
 .header__content {
     background-color: var(--section-color);
-    max-height: 618px;
+    max-height: 607px;
 }
 
 .header__content-inner {
@@ -164,7 +164,8 @@ section:nth-child(2n) {
 
 .header__main-bg {
     width: 800px;
-    height: 618px;
+    height: 607px;
+    background-size: contain;
 }
 
 /* --------- Slider --------- */
