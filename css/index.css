@@ -36,7 +36,7 @@ section:nth-child(2n) {
 .container {
     max-width: 1240px;
     margin: auto;
-    padding: 0 20px;
+    padding: 0 1.25em;
 }
 
 .title {

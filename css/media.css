@@ -4,6 +4,10 @@
     width: 650px;
     height: 492px;
   }
+
+  .detail__item:nth-child(2) {
+    display: none;
+  }
 }
 
 
@@ -15,6 +19,7 @@
   }
 }
 
+
 @media (max-width: 900px) {
 
   .header__main-bg {
@@ -24,6 +29,10 @@
 
   .header__text {
     padding: 1em 0;
+  }
+
+  .detail__item:nth-child(1) {
+    display: none;
   }
 }
 
@@ -81,5 +90,12 @@
 
   .header__content-img {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .detail__item-img {
+    height: 190px;
+    width: auto;
   }
 }
