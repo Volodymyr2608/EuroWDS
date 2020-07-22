@@ -1,4 +1,4 @@
-@media (max-width: 1200px) {
+@media (max-width: 1216px) {
 
   .header__main-bg {
     width: 650px;
@@ -8,19 +8,38 @@
   .detail__item:nth-child(2) {
     display: none;
   }
+
 }
 
 
-@media (max-width: 1048px) {
+
+@media (max-width: 1068px) {
 
   .header__main-bg {
     width: 500px;
     height: 379px;
   }
+
+  .about__item {
+    flex-direction: column;
+  }
+
+  .about__item:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .about__item-text {
+    padding-right: 0;
+    padding-bottom: 2em;
+  }
+
+  .about__inner > .about__item:nth-child(2n) > .about__item-text {
+    padding-left: 0;
+}
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
 
   .header__main-bg {
     width: 370px;

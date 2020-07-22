@@ -184,31 +184,40 @@ section:nth-child(2n) {
 
 .about__inner {
     padding-bottom: 3.125em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 3em;
 }
 
+.about__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5em;
+}
 
-.about-block__text {
+.about__item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.about__item-title {
+    display: none;
+}
+
+.about__item-text {
     text-align: justify;
     line-height: 2em;
     color: #7a7a7a;
     font-style: italic;
     text-indent: 2em;
+    width: 100%;
+    padding-right: 2em;
 }
 
+.about__inner > .about__item:nth-child(2n) > .about__item-text {
+    padding-left: 2em;
+}
 
 .about__img {
     width: 100%;
-    height: 100%;
     border-radius: 5px;
-}
-
-.about-block__picture:nth-last-child(2n+1) {
-    display: flex;
-    justify-content: flex-end;
 }
 
 /* --------- Cargo --------- */
