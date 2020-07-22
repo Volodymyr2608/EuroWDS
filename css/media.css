@@ -1,9 +1,5 @@
 @media (max-width: 1200px) {
 
-/*   .header__content {
-    max-height: 492px;
-  } */
-
   .header__main-bg {
     width: 650px;
     height: 492px;
@@ -13,10 +9,6 @@
 
 @media (max-width: 1048px) {
 
-/*   .header__content {
-    max-height: 379px;
-  } */
-
   .header__main-bg {
     width: 500px;
     height: 379px;
@@ -24,10 +16,6 @@
 }
 
 @media (max-width: 900px) {
-
-/*   .header__content {
-    max-height: 280px;
-  } */
 
   .header__main-bg {
     width: 370px;
@@ -73,7 +61,7 @@
 
   .header__content-inner {
     text-align: center;
-    padding-bottom: 1.25em;
+    padding-bottom: 2.5em;
   }
 
   .header__content-text {
