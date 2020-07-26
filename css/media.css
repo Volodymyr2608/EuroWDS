@@ -117,4 +117,38 @@
     height: 190px;
     width: auto;
   }
+
+  .about__item-title {
+    display: block;
+    color: var(--main-color);
+    align-self: flex-start;
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .about__item {
+    background-color: #fff;
+    box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 5px 10px rgba(0,0,0,0.22);
+    margin-bottom: 2.5em;
+    padding: 1em;
+    border-radius: 3px;
+  }
+
+  .about__item-title:after {
+    content: "\ea50";
+    font-family: "icomoon" !important;
+    transform: rotate(90deg);
+    font-size: 1rem;
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+
+  .about__item-text, .about__item-picture {
+    display: none;
+  }
+
 }
+
+ 
