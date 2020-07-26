@@ -20,11 +20,11 @@
     height: 379px;
   }
 
-  .about__item {
+  .about__item-content {
     flex-direction: column;
   }
 
-  .about__item:nth-child(2n) {
+  .about__item:nth-child(2n) .about__item-content{
     flex-direction: column;
   }
 
@@ -33,9 +33,9 @@
     padding-bottom: 2em;
   }
 
-  .about__inner > .about__item:nth-child(2n) > .about__item-text {
+  .about__inner > .about__item:nth-child(2n) > .about__item-content > .about__item-text {
     padding-left: 0;
-}
+  }
 }
 
 
@@ -52,6 +52,22 @@
 
   .detail__item:nth-child(1) {
     display: none;
+  }
+
+  .cargo__goods-card {
+    grid-column: 1 / 3;
+    grid-row: span 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .goods__inner {
+    margin-right: 4em;
+  }
+
+  .goods-prices {
+    align-self: flex-end;
   }
 }
 
@@ -112,6 +128,14 @@
   }
 }
 
+@media (max-width: 670px) {
+  .cargo__goods-card {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
+}
+
 @media (max-width: 576px) {
   .detail__item-img {
     height: 190px;
@@ -135,18 +159,65 @@
     border-radius: 3px;
   }
 
+  .about__item-content {
+    padding-bottom: 0;
+  }
+
   .about__item-title:after {
     content: "\ea50";
     font-family: "icomoon" !important;
     transform: rotate(90deg);
-    font-size: 1rem;
+    font-size: 1.1rem;
     position: absolute;
     right: 0;
-    top: 2px;
+    top: 3px;
   }
 
-  .about__item-text, .about__item-picture {
+  .about__item-title.open:after {
+    content: "\ea50";
+    transform: rotate(180deg);
+    font-family: "icomoon" !important;
+    top: 0;
+  }
+
+  .about__item-text {
+    padding-top: .5em;
+  }
+
+  .about__item-content {
     display: none;
+  }
+
+  .about__item-title.open + .about__item-content {
+    display: block;
+  }
+
+  .goods-prices {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 470px) {
+  .cargo__goods-card {
+      padding: 0 1em 2em;
+  }
+
+  .goods__info {
+    font-size: 1rem;
+  }
+
+  .goods__inner {
+    margin-right: 1em;
+  }
+
+  .goods__old-price {
+    font-size: 1.2em;
+  }
+
+  .goods__new-price {
+    font-size: 1.3em;
   }
 
 }

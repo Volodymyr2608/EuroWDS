@@ -186,14 +186,21 @@ section:nth-child(2n) {
     padding-bottom: 3.125em;
 }
 
-.about__item {
+/* .about__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5em;
+} */
+
+.about__item-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1.5em;
 }
 
-.about__item:nth-child(2n) {
+.about__item:nth-child(2n) .about__item-content {
     flex-direction: row-reverse;
 }
 
@@ -211,8 +218,9 @@ section:nth-child(2n) {
     padding-right: 2em;
 }
 
-.about__inner > .about__item:nth-child(2n) > .about__item-text {
+.about__inner > .about__item:nth-child(2n) > .about__item-content > .about__item-text {
     padding-left: 2em;
+    padding-right: 0;
 }
 
 .about__img {
