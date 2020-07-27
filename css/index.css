@@ -348,10 +348,17 @@ section:nth-child(2n) {
 }
 
 .contact__inner-text {
+    
+    width: 100%;
     text-align: justify;
     color: #606060;
     padding-right: 6em;
     font-size: 1.1rem;
+}
+
+.contact__inner-form {
+    max-width: 500px;
+    width: 100%;
 }
 
 .contact__inner-text p + p {
@@ -363,9 +370,10 @@ section:nth-child(2n) {
     margin-top: 1.875em;
 }
 
+
 .form__input {
     display: block;
-    width: 500px;
+    width: 100%;
     padding: 1em;
     border-radius: 3px;
     border: 1px solid #d6d6d6;
@@ -377,6 +385,7 @@ section:nth-child(2n) {
 .form__textarea {
     resize: none;
     height: 150px;
+    width: 100%;
 }
 
 .form__btn {

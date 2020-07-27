@@ -36,6 +36,10 @@
   .about__inner > .about__item:nth-child(2n) > .about__item-content > .about__item-text {
     padding-left: 0;
   }
+
+  .contact__inner-text {
+    padding-right: 3em;
+  }
 }
 
 
@@ -68,6 +72,22 @@
 
   .goods-prices {
     align-self: flex-end;
+  }
+
+  .contact__inner-text {
+      padding-right: 0;
+  }
+
+  .contact__inner {
+    flex-direction: column;
+  }
+
+  .contact__inner-text {
+    padding-bottom: 1em;
+  }
+
+  .contact__inner-text p + p {
+    margin-top: 1em;
   }
 }
 
@@ -196,6 +216,11 @@
     display: flex;
     justify-content: center;
   }
+
+/*   .form__input {
+    max-width: 500px;
+    width: 100%;
+  } */
 
 }
 
