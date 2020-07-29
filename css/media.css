@@ -216,7 +216,7 @@
     font-size: 1.1rem;
     position: absolute;
     right: 0;
-    top: 3px;
+    top: -1px;
   }
 
   .about__item-title.open:after {
@@ -234,9 +234,9 @@
     display: none;
   }
 
-  .about__item-title.open + .about__item-content {
+ /*  .about__item-title.open + .about__item-content {
     display: block;
-  }
+  } */
 
   .goods-prices {
     display: flex;

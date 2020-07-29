@@ -28,34 +28,8 @@ $(function () {
     ]
   });
 
-  /* $(".slider__items").slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: true,
-  });
 
-  $(".slider__quote").slick({
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: ".slider__person-img",
-  });
-
-  $(".slider__person-img").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: ".slider__quote",
-    focusOnSelect: true,
-    swipeToSlide: true,
-    centerMode: true,
-    centerPadding: "20px",
-    initialSlide: 2,
-  });
-
-  $('.footer__title').on("click", function () {
-    $(this).toggleClass('open').next().slideToggle();
-  }); */
+  $(".about__item-title").on("click", function () {
+    $(this).toggleClass('open').next().slideToggle()
+  }); 
 });
-
-console.log('hello')

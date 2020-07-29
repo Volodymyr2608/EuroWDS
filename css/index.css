@@ -175,7 +175,7 @@ section:nth-child(2n) {
     padding: 0 60px
 }
 
-.detail__item {
+.detail__item:nth-child(2n) {
     padding: 0 1.2em;
 }
 
