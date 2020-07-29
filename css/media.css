@@ -101,9 +101,35 @@
     color: #232323;
   }
 
-  .menu {
-    display: none;
+/*   .menu {
+    position: relative;
+  } */
+
+  .menu__list-item {
+    display: block;
+    text-align: center;
+    padding-left: 0;
   }
+
+  .menu__items {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+/*     margin-top: -32px;
+    z-index: 50;
+    background-color: lime;
+    max-width: 200px;
+    height: 100vh; */
+  }
+
+/*   .menu__items::after {
+    content: "\ea0f";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: 'icomoon' !important;
+  } */
 
   .header__content {
     background-image: url(../img/main-bg-mobile.jpg);
