@@ -1,8 +1,8 @@
 $(function () {
-  $(".header__btn-menu").on("click", function () {
+/*   $(".header__btn-menu").on("click", function () {
     $(".menu ul").slideToggle();
     console.log('click')
-  });
+  }); */
 
   $('.slider__inner').slick({
     nextArrow: '<div class="slick-btn slick-next"></div>',

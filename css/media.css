@@ -270,7 +270,12 @@
   .goods__new-price {
     font-size: 1.3em;
   }
+}
 
+@media (min-width: 577px) {
+  .about__item-content {
+    display: flex !important;
+  }
 }
 
  
