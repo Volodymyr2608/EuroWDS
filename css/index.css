@@ -299,7 +299,7 @@ section:nth-child(2n) {
 }
 
 .cargo__title:first-child {
-    padding-top: 0.7em;
+    padding-top: 0;
 }
 
 .cargo__goods-inner {

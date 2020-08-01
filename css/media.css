@@ -195,7 +195,12 @@
   }
   
   .goods__picture img {
-    display: inline;
+    display: inline-block;
+    height: 200px;
+  }
+
+  .cargo__goods-card {
+    padding: 0 1.75em 2em;
   }
 
   .slick-dots {
