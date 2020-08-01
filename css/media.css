@@ -58,16 +58,23 @@
     display: none;
   }
 
+  .cargo__goods-inner{
+    flex-direction: column;
+  }
+
+  .cargo__goods-card:first-child {
+    margin-right: 0;
+    margin-bottom: 3em;
+  }
+
   .cargo__goods-card {
-    grid-column: 1 / 3;
-    grid-row: span 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
   .goods__inner {
-    margin-right: 4em;
+    margin-right: 3.5em;
   }
 
   .goods-prices {
@@ -175,11 +182,45 @@
 }
 
 @media (max-width: 670px) {
+
   .cargo__goods-card {
     display: flex;
     flex-direction: column;
     align-items: initial;
+    outline: none;
   }
+
+  .cargo__goods-card:first-child {
+    margin-bottom: 1em;
+  }
+  
+  .goods__picture img {
+    display: inline;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-dots li {
+    margin-right: 10px;
+  }
+
+  .slick-dots li.slick-active button {
+    background-color: var(--main-color);
+  }
+
+  .slick-dots button {
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border: 1px solid var(--main-color);
+  }
+
 }
 
 @media (max-width: 576px) {

@@ -28,6 +28,31 @@ $(function () {
     ]
   });
 
+  function showSlider() {
+    if (window.innerWidth <= 670) {
+      $(".cargo__goods-inner").not('.slick-initialized').slick({
+        responsive: [
+          {
+            breakpoint: 2048,
+            settings: "unslick"
+          },
+          {
+            breakpoint: 670,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              arrows: false
+            }
+          }
+        ]
+      })
+    }
+  }
+
+  window.onload = showSlider;
+  window.addEventListener("resize", showSlider);
+
 
   $(".about__item-title").on("click", function () {
     $(this).toggleClass('open').next().slideToggle()
