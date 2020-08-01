@@ -275,19 +275,10 @@
     display: none;
   }
 
- /*  .about__item-title.open + .about__item-content {
-    display: block;
-  } */
-
   .goods-prices {
     display: flex;
     justify-content: center;
   }
-
-/*   .form__input {
-    max-width: 500px;
-    width: 100%;
-  } */
 
 }
 
