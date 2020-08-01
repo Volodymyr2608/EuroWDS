@@ -58,3 +58,11 @@ $(function () {
     $(this).toggleClass('open').next().slideToggle()
   }); 
 });
+
+const menuBtn = document.getElementById("menu__btn");
+
+const closeBtn = document.getElementById('close-btn');
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => menu.classList.add("show"));
+closeBtn.addEventListener("click", () => menu.classList.remove("show"));

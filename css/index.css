@@ -67,6 +67,72 @@ section:nth-child(2n) {
     font-size: 0.875rem;
 }
 
+/* --------- modal menu ----------*/
+
+.modalMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: #fff;
+  min-height: 100vh;
+  width: 300px;
+  padding: 20px;
+  line-height: 1.5;
+  transform: translateX(-400px);
+  transition: transform 1s ease-in-out;
+  z-index: 1000;
+  font-size: 1.4rem;
+}
+
+.modalMenu.show {
+  transform: translateX(0);
+}
+
+#close-btn::after {
+    content: "\ea0f";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    right: 10px;
+    top: 10px; 
+}
+
+.menu-modal__items li a{
+    padding-left: 10px;
+}
+
+.menu-modal__item-home:before {
+    content: "\e900";
+    font-family: 'icomoon' !important;
+}
+
+.menu-modal__item-about:before {
+    content: "\e922";
+    font-family: 'icomoon' !important;
+}
+
+.menu-modal__item-cargo:before {
+    content: "\ea58";
+    font-family: 'icomoon' !important;
+}
+
+.menu-modal__item-contact:before {
+    content: "\e944";
+    font-family: 'icomoon' !important;
+}
+
+.line {
+    margin: 10px 0;
+}
+
+.header__modal-menu .cart__number {
+    left: 17px;
+}
+
+.header__cart a{
+    padding-left: 10px;
+}
+
 
 /* --------- Header --------- */
 
