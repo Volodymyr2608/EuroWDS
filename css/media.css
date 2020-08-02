@@ -269,7 +269,7 @@
     content: "\ea50";
     transform: rotate(180deg);
     font-family: "icomoon" !important;
-    top: 0;
+    top: -4px;
   }
 
   .about__item-text {
