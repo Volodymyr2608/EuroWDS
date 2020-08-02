@@ -62,15 +62,21 @@ $(function () {
 const menuBtn = document.getElementById("menu__btn");
 const closeBtn = document.getElementById('close-btn');
 const menu = document.getElementById("menu");
+const menuContent = document.querySelector('.menu-content');
+const menuOverlay = document.querySelector('.menu-overlay');
 
 const removeShowMenu = () => {
-  menu.classList.remove("show")
+  menu.classList.remove("menu_state_visible");
+  menuContent.classList.remove("menu-content_state_visible");
+  menuOverlay.classList.remove('menu-overlay_state_visible')
   document.body.style.overflow = ""
 }
 
 
 menuBtn.addEventListener("click", () => {
-  menu.classList.add("show");
+  menu.classList.add("menu_state_visible");
+  menuContent.classList.add("menu-content_state_visible");
+  menuOverlay.classList.add('menu-overlay_state_visible')
   document.body.style.overflow = "hidden";
 });
 closeBtn.addEventListener("click", removeShowMenu);
