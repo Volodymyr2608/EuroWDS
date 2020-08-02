@@ -60,9 +60,20 @@ $(function () {
 });
 
 const menuBtn = document.getElementById("menu__btn");
-
 const closeBtn = document.getElementById('close-btn');
 const menu = document.getElementById("menu");
 
-menuBtn.addEventListener("click", () => menu.classList.add("show"));
-closeBtn.addEventListener("click", () => menu.classList.remove("show"));
+const removeShowMenu = () => {
+  menu.classList.remove("show")
+  document.body.style.overflow = ""
+}
+
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.add("show");
+  document.body.style.overflow = "hidden";
+});
+closeBtn.addEventListener("click", removeShowMenu);
+
+const menuItems = document.querySelectorAll('.menu-modal__items li')
+  .forEach(item => item.addEventListener('click', removeShowMenu))
