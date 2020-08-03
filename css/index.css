@@ -66,116 +66,6 @@ section:nth-child(2n) {
   font-size: 0.875rem;
 }
 
-/* --------- modal menu ----------*/
-
-/* .modalMenu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #333;
-  color: #fff;
-  min-height: 100vh;
-  width: 320px;
-  padding: 20px;
-  line-height: 1.5;
-  transform: translateX(-400px);
-  transition: transform 1s ease-in-out;
-  z-index: 1000;
-  font-size: 1.4rem;
-} */
-
-.menu_state_visible {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-}
-
-.menu-content {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10000;
-  width: 320px;
-  height: 100vh;
-  background: #333;
-  color: #fff;
-  padding: 20px;
-  line-height: 1.5;
-  transform: translateX(-400px);
-  transition: transform 1s ease-in-out;
-  font-size: 1.4rem;
-}
-
-.menu-overlay {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9999;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: transform .1ms ease-in-out .2s, opacity .2s ease-in-out;
-  overflow: auto;
-}
-
-.menu-overlay.menu-overlay_state_visible {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity .2s ease-in-out;
-}
-
-.menu-content.menu-content_state_visible {
-  transform: translateX(0);
-}
-
-#close-btn::after {
-  content: "\ea0f";
-  font-family: "icomoon" !important;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.menu-modal__items li a {
-  padding-left: 10px;
-}
-
-.menu-modal__item-home:before {
-  content: "\e900";
-  font-family: "icomoon" !important;
-}
-
-.menu-modal__item-about:before {
-  content: "\e922";
-  font-family: "icomoon" !important;
-}
-
-.menu-modal__item-cargo:before {
-  content: "\ea58";
-  font-family: "icomoon" !important;
-}
-
-.menu-modal__item-contact:before {
-  content: "\e944";
-  font-family: "icomoon" !important;
-}
-
-.line {
-  margin: 10px 0;
-}
-
-.menu-content .cart__number {
-  left: 17px;
-}
-
-.header__cart a {
-  padding-left: 10px;
-}
 
 /* --------- Header --------- */
 
@@ -187,6 +77,10 @@ section:nth-child(2n) {
 }
 
 .header__btn-menu {
+  display: none;
+}
+
+#menu {
   display: none;
 }
 

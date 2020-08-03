@@ -74,6 +74,7 @@ const removeShowMenu = () => {
 
 
 menuBtn.addEventListener("click", () => {
+  menu.style.display = 'block';
   menu.classList.add("menu_state_visible");
   menuContent.classList.add("menu-content_state_visible");
   menuOverlay.classList.add('menu-overlay_state_visible')
