@@ -1,8 +1,4 @@
 $(function () {
-/*   $(".header__btn-menu").on("click", function () {
-    $(".menu ul").slideToggle();
-    console.log('click')
-  }); */
 
   $('.slider__inner').slick({
     nextArrow: '<div class="slick-btn slick-next"></div>',
@@ -54,9 +50,9 @@ $(function () {
   window.addEventListener("resize", showSlider);
 
 
-  $(".about__item-title").on("click", function () {
-    $(this).toggleClass('open').next().slideToggle()
-  }); 
+  $(".about__item-title a").on("click", function () {
+    $(this).toggleClass('open')
+  });
 });
 
 const menuBtn = document.getElementById("menu__btn");
@@ -65,22 +61,29 @@ const menu = document.getElementById("menu");
 const menuContent = document.querySelector('.menu-content');
 const menuOverlay = document.querySelector('.menu-overlay');
 
+
 const removeShowMenu = () => {
   menu.classList.remove("menu_state_visible");
+  menuContent.classList.add("menu-close");
   menuContent.classList.remove("menu-content_state_visible");
   menuOverlay.classList.remove('menu-overlay_state_visible')
   document.body.style.overflow = ""
+  setTimeout(() => {
+    menuContent.classList.remove("menu-close");
+  }, 1000);
 }
 
-
 menuBtn.addEventListener("click", () => {
-  menu.style.display = 'block';
   menu.classList.add("menu_state_visible");
   menuContent.classList.add("menu-content_state_visible");
   menuOverlay.classList.add('menu-overlay_state_visible')
   document.body.style.overflow = "hidden";
 });
+
 closeBtn.addEventListener("click", removeShowMenu);
+document.querySelector("#menu .header__cart").addEventListener('click', removeShowMenu);
 
 const menuItems = document.querySelectorAll('.menu-modal__items li')
   .forEach(item => item.addEventListener('click', removeShowMenu))
+
+new ProductList(new Cart());

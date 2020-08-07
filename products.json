@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "img": "img/open-task-de-lux.jpg",
+    "title": "OPEN TECK DE-LUX 60",
+    "mountingWidth": "60 мм",
+    "numberCameras": "4 камери",
+    "thermalInsulation": "Uf = 0,71 Вт/мK",
+    "soundInsulation": "до Rw,P= 41 дБ",
+    "glassThickness": "до 32 мм",
+    "oldPrice": 2278,
+    "newPrice": 1869
+  },
+  {
+    "id": "2",
+    "img": "img/open-task-elit.jpg",
+    "title": "OPEN TECK  ELIT 70",
+    "mountingWidth": "71 мм",
+    "numberCameras": "5 камер",
+    "thermalInsulation": "Uf = 0,86 Вт/мK",
+    "soundInsulation": "до Rw,P= 41 дБ",
+    "glassThickness": "до 32 мм",
+    "oldPrice": 3272,
+    "newPrice": 2017
+  },
+  {
+    "id": "3",
+    "img": "img/salamander-design.jpg",
+    "title": "SALAMANDER DESIGN 2D",
+    "mountingWidth": "60 мм",
+    "numberCameras": "3 камери",
+    "thermalInsulation": "Uf = 0,63 Вт/мK",
+    "soundInsulation": "до Rw,P= 42 дБ",
+    "glassThickness": "до 32 мм",
+    "oldPrice": 3563,
+    "newPrice": 2662
+  },
+  {
+    "id": "4",
+    "img": "img/salamander-streamline.jpg",
+    "title": "SALAMANDER STREAMLINE",
+    "mountingWidth": "76 мм",
+    "numberCameras": "5 камер",
+    "thermalInsulation": "Uf = 0,77 Вт/мK",
+    "soundInsulation": "до 43 дБ",
+    "glassThickness": "до 48 мм",
+    "oldPrice": 4200,
+    "newPrice": 3016
+  }
+]
